@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class One {
+public class SimpleCalc {
     static Scanner sc = new Scanner(System.in);
 
 
