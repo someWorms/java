@@ -13,13 +13,18 @@ class characterMenuEntry{
         do {
             if(ch == 1) {
                 System.out.println("РЫЦАРЬ");
+                chDone = true;
             }else if(ch == 2) {
                 System.out.println("УБИЙЦА");
+                chDone = true;
             }else if(ch == 3) {
                 System.out.println("СТРЕЛОК");
+                chDone = true;
+            }else{
+                System.out.println("Неверный выбор");
             }
-            System.out.println("Неверный выбор");
-        }while (chDone == false)
+
+        }while (!chDone);
     }
 
 }
@@ -29,7 +34,7 @@ public class startGame {
 
     }
     characterMenuEntry cME = new characterMenuEntry();
-    void toClass(){
+    public void toClass(){
         Scanner sc = new Scanner(System.in);
         cME.characterChoice(sc.nextInt());
     }

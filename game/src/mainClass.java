@@ -15,7 +15,8 @@ class menuEntry{
             if(ch == 1) {
                 System.out.println("Начать игру");
                 choiceDone = true;
-                //START GAME
+                startGame sg = new startGame();
+                sg.toClass();
             }
             else if(ch == 2){
                 System.out.println("Выход");
