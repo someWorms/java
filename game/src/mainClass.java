@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 class menuEntry{
+
     {
         System.out.println("Выберите опцию");
     }
@@ -14,6 +15,7 @@ class menuEntry{
             if(ch == 1) {
                 System.out.println("Начать игру");
                 choiceDone = true;
+                //START GAME
             }
             else if(ch == 2){
                 System.out.println("Выход");
