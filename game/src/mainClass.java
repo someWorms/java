@@ -40,7 +40,7 @@ class menuEntry{
     void exitGame(){
         System.out.println("Завершение...");
         System.exit(0);
-    }//
+    }
 }
 
 
@@ -49,6 +49,5 @@ public class mainClass {
         menuEntry mE =new menuEntry();
         Scanner sc = new Scanner(System.in);
         mE.setCh(sc.nextInt());
-    }//
+    }
 }
-//
