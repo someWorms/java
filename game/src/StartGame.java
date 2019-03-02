@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
-class gameInitializer {
+class GameInitializer {
     public final int maxLevel = 150;
 
 }
 
-class characterMenuEntry{
+class CharacterMenuEntry{
 
 
     void characterChoice(int ch) {
@@ -28,13 +28,12 @@ class characterMenuEntry{
     }
 
 }
-public class startGame {
-    {
-        System.out.println("Начало! Выбери персонажа");
+public class StartGame {
 
-    }
-    characterMenuEntry cME = new characterMenuEntry();
-    public void toClass(){
+
+    private CharacterMenuEntry cME = new CharacterMenuEntry();
+    void toClass(){
+        System.out.println("Начало! Выбери персонажа");
         Scanner sc = new Scanner(System.in);
         cME.characterChoice(sc.nextInt());
     }

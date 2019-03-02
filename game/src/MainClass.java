@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class menuEntry{
+class MenuEntry{
 
     {
         System.out.println("Выберите опцию");
@@ -15,7 +15,7 @@ class menuEntry{
             if(ch == 1) {
                 System.out.println("Начать игру");
                 choiceDone = true;
-                startGame sg = new startGame();
+                StartGame sg = new StartGame();
                 sg.toClass();
             }
             else if(ch == 2){
@@ -47,9 +47,9 @@ class menuEntry{
 }
 
 
-public class mainClass {
+public class MainClass {
     public static void main(String[] args) {
-        menuEntry mE =new menuEntry();
+        MenuEntry mE =new MenuEntry();
         Scanner sc = new Scanner(System.in);
         mE.setCh(sc.nextInt());
     }
