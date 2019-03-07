@@ -15,14 +15,26 @@ public class MainClass {
         Scanner sc2 = new Scanner(System.in);
         Scanner sc3 = new Scanner(System.in);
         int choice = sc.nextInt();
-        if(choice == 1) {
+        if (choice == 1) {
             Calcs c = new Massa();
             System.out.println("Введите число");
             c.setEntryNum(sc3.nextInt());
 
             System.out.println("В какой еденице заданное число? Укажите название");
             System.out.println("1)Грамм (g)\n2)Килограмм (kg)");
-            System.out.println("3)Тонна (t)\n10)Килотонна (kt)");
+            System.out.println("3)Тонна (t)\n4)Килотонна (kt)");
+
+            c.setTypo(sc2.nextLine());
+            c.doCalcs();
+        }
+        if (choice == 2){
+            Calcs c = new Lengths();
+            System.out.println("Введите число");
+            c.setEntryNum(sc3.nextInt());
+
+            System.out.println("В какой еденице заданное число? Укажите название");
+            System.out.println("1)Миллиметр (mm)\n2)Сантиметр (cm)");
+            System.out.println("3)Метр (m)\n4)Километр (km)");
 
             c.setTypo(sc2.nextLine());
             c.doCalcs();

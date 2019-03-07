@@ -14,6 +14,7 @@ abstract public strictfp class Calcs {
 
     abstract void doCalcs();
 
+
     public String getTypo() {
         return typo;
     }
