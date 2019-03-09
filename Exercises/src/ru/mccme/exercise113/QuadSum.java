@@ -6,13 +6,13 @@ import java.util.Scanner;
 public class QuadSum {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int num = (45);
+        int num = (sc.nextInt());
         int div = 1;
         int cnt = 0;
         int dividerHolder = 2;
 
-        while (cnt < num) {
-            num -= div;
+        while (div < num) {
+            //num -= div;
             cnt = div;
             System.out.println(cnt);
 
@@ -20,11 +20,6 @@ public class QuadSum {
             div = dividerHolder;
             dividerHolder++;
             div *= div;
-            if (div > num) {
-
-                //idk 
-                return;
-            }
 
         }
     }
