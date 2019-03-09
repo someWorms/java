@@ -6,19 +6,25 @@ import java.util.Scanner;
 public class QuadSum {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int num = (25);
+        int num = (45);
         int div = 1;
         int cnt = 0;
         int dividerHolder = 2;
 
-        while(cnt < num){
-            num-=div;
+        while (cnt < num) {
+            num -= div;
             cnt = div;
             System.out.println(cnt);
 
-            div=dividerHolder;
+
+            div = dividerHolder;
             dividerHolder++;
-            div*=div;
+            div *= div;
+            if (div > num) {
+
+                //idk 
+                return;
+            }
 
         }
     }
