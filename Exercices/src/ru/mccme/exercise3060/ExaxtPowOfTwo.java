@@ -1,4 +1,4 @@
-package ru.mccme.exercice3060;
+package ru.mccme.exercise3060;
 
 import java.util.Scanner;
 

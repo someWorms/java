@@ -1,4 +1,4 @@
-package ru.mccme.exercice3059;
+package ru.mccme.exercise3059;
 
 import java.util.Scanner;
 /*По данному числу N распечатайте все целые степени двойки, не превосходящие N, в порядке возрастания.
