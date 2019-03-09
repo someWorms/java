@@ -1,7 +1,10 @@
 package ru.mccme.exercice3059;
 
 import java.util.Scanner;
+/*По данному числу N распечатайте все целые степени двойки, не превосходящие N, в порядке возрастания.
 
+  Операцией возведения в степень пользоваться нельзя!
+*/
 public class PowOfTwo {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
