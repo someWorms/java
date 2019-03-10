@@ -9,10 +9,12 @@ import java.util.Scanner;
 public class CuantityBigger {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        System.out.println("Введите количество элементов в массиве");
         int x = sc.nextInt();
         int[] arr = new int[x];
         int elem = 0;
 
+        System.out.println("Заполните массив");
         for (int i = 0; i < x; i++)
             arr[i] = sc.nextInt();
 
@@ -23,6 +25,6 @@ public class CuantityBigger {
             else
                 elem = 0;
         }
-        System.out.println(elem);
+        System.out.println("Элесентов больще предыдущего " + elem);
     }
 }
