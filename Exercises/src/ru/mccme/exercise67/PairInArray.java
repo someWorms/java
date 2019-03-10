@@ -18,14 +18,11 @@ public class PairInArray {
         System.out.println("Заполните массив");
         for (int i = 0; i < x; i++)
             arr[i] = sc.nextInt();
-        for (int i = 1; i < x; i+=2){
-            if(arr[i]<0 && arr[i-1]<0){
-                isPair=true;
-
-            }
-            if(arr[i]>0 && arr[i-1]>0){
-                isPair=true;
-            }
+        for (int i = 1; i < x; i += 2) {
+            if (arr[i] < 0 && arr[i - 1] < 0)
+                isPair = true;
+            if (arr[i] > 0 && arr[i - 1] > 0)
+                isPair = true;
         }
         System.out.println("Есть ли парные числа? " + isPair);
     }
