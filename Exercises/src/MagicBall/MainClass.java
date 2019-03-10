@@ -25,22 +25,31 @@ public class MainClass {
         String s = sc.nextLine();
 
 
-        if(randNum == 0){
-            System.out.println("Да");
-        }else if(randNum == 1){
-            System.out.println("Нет");
-        }else if(randNum == 2){
-            System.out.println("Скорее всего да");
-        }else if(randNum == 3){
-            System.out.println("Скорее всего нет");
-        }else if(randNum == 4){
-            System.out.println("Возможно");
-        }else if(randNum == 5){
-            System.out.println("Имеются переспективы");
-        }else if(randNum == 6){
-            System.out.println("Вопрос задан не верно");
-        }else{
-            System.out.println("You will not see that:D");
+        switch (randNum){
+            default:
+                System.out.println("Hello, im here just for test!");
+            case 0:
+                System.out.println("Да");
+                break;
+            case 1:
+                System.out.println("Нет");
+                break;
+            case 2:
+                System.out.println("Скорее всего да");
+                break;
+            case 3:
+                System.out.println("Скорее всего нет");
+                break;
+            case 4:
+                System.out.println("Возможно");
+                break;
+            case 5:
+                System.out.println("Имеются переспективы");
+                break;
+            case 6:
+                System.out.println("Вопрос задан не верно");
+                break;
+
         }
     }
 }
