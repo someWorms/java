@@ -25,5 +25,6 @@ public class CuantOfNumbs {
 
         System.out.println("Количесвто положительных чисел " + cuant);
 
+
     }
 }
