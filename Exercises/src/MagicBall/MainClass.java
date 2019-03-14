@@ -49,7 +49,6 @@ public class MainClass {
             case 6:
                 System.out.println("Вопрос задан не верно");
                 break;
-
         }
     }
 }
