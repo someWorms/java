@@ -8,8 +8,11 @@ public class Init {
     }
 
     public void setSize(int size) {
-        if (size == 54 | size == 36)
+        if (size == 54 | size == 36){
             this.size = size;
+            generateStandartDeck();
+        }
+
         else {
             this.size = 36;
             System.out.println("Колода установлена по умолчанию...");
@@ -33,30 +36,34 @@ public class Init {
         StandardCardDeck scdKing = StandardCardDeck.KING;
         StandardCardDeck scdAce = StandardCardDeck.ACE;
 
-        StandardCardDeck[] diamondDeck = new StandardCardDeck[] {
-            scdSix, scdSeven, scdEight,
-                    scdNine, scdTen, scdJack,
-                    scdQueen, scdKing, scdAce
+        StandardCardDeck[] diamondDeck = new StandardCardDeck[]{
+                scdSix, scdSeven, scdEight,
+                scdNine, scdTen, scdJack,
+                scdQueen, scdKing, scdAce
         };
-        StandardCardDeck[] spadesDeck = new StandardCardDeck[] {
-            scdSix, scdSeven, scdEight,
-                    scdNine, scdTen, scdJack,
-                    scdQueen, scdKing, scdAce
+        StandardCardDeck[] spadesDeck = new StandardCardDeck[]{
+                scdSix, scdSeven, scdEight,
+                scdNine, scdTen, scdJack,
+                scdQueen, scdKing, scdAce
         };
-        StandardCardDeck[] clubsDeck = new StandardCardDeck[] {
-            scdSix, scdSeven, scdEight,
-                    scdNine, scdTen, scdJack,
-                    scdQueen, scdKing, scdAce
+        StandardCardDeck[] clubsDeck = new StandardCardDeck[]{
+                scdSix, scdSeven, scdEight,
+                scdNine, scdTen, scdJack,
+                scdQueen, scdKing, scdAce
         };
-        StandardCardDeck[] heartsDeck = new StandardCardDeck[] {
-            scdSix, scdSeven, scdEight,
-                    scdNine, scdTen, scdJack,
-                    scdQueen, scdKing, scdAce
+        StandardCardDeck[] heartsDeck = new StandardCardDeck[]{
+                scdSix, scdSeven, scdEight,
+                scdNine, scdTen, scdJack,
+                scdQueen, scdKing, scdAce
         };
+        toShuffle(diamondDeck);
+
+
     }
 
-    void toShuffle() {
 
+    void toShuffle(StandardCardDeck[]  dD) {
         Shuffle shuffle = new Shuffle();
+        shuffle.doShuffle(dD);
     }
 }
