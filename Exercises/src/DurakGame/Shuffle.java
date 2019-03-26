@@ -16,7 +16,7 @@ public class Shuffle {
 
             int x = (int)(Math.random()*8);
 
-            for (int j = 0; j < cards.length; j++) {
+            for (int j = 0; j < 8; j++) {
                 if(collector[j] == x){
                     x = (int)(Math.random()*8);
                     j = 0;
