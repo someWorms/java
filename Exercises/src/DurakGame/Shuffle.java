@@ -11,19 +11,22 @@ public class Shuffle {
     void doShuffle(StandardCardDeck[] cards) {
         StandardCardDeck[] shuffled = new StandardCardDeck[cards.length];
 
-        int[] collector = new int[]{99,99,99,99,99,99,99,99,99};
+
+        int[] collector = new int[cards.length];
         for (int i = 0; i < cards.length; i++) {
 
-            int x = (int)(Math.random()*cards.length);
+            int x = (int) (Math.random() * cards.length);
 
-            for (int j = 0; j < cards.length; j++) {
-                if(collector[j] == x){
-                    x = (int)(Math.random()*cards.length);
+            for (int j = 0; j <= i; ) {
+                if (collector[j] == x) {
+                    x = (int) (Math.random() * cards.length);
                     j = 0;
+                }else {
+                    j++;
                 }
             }
             shuffled[i] = cards[x];
-            collector[i]=x;
+            collector[i] = x;
 
 
             System.out.println(shuffled[i] + " номер коллектора " + collector[i]);
