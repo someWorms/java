@@ -11,17 +11,16 @@ public class Shuffle {
     void doShuffle(StandardCardDeck[] cards) {
         StandardCardDeck[] shuffled = new StandardCardDeck[cards.length];
 
-        int[] collector = new int[8];
+        int[] collector = new int[]{99,99,99,99,99,99,99,99,99};
         for (int i = 0; i < cards.length; i++) {
 
-            int x = (int)(Math.random()*8);
+            int x = (int)(Math.random()*cards.length);
 
-            for (int j = 0; j < 8; j++) {
+            for (int j = 0; j < cards.length; j++) {
                 if(collector[j] == x){
-                    x = (int)(Math.random()*8);
+                    x = (int)(Math.random()*cards.length);
                     j = 0;
-                }else
-                    break;
+                }
             }
             shuffled[i] = cards[x];
             collector[i]=x;
