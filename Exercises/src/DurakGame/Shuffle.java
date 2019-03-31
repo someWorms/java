@@ -17,6 +17,7 @@ public class Shuffle {
 
             int x = (int) (Math.random() * cards.length);
 
+            //idk how it works but it works
             for (int j = 0; j <= i; ) {
                 if (collector[j] == x) {
                     x = (int) (Math.random() * cards.length);
