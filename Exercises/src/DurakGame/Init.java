@@ -8,12 +8,10 @@ public class Init {
     }
 
     public void setSize(int size) {
-        if (size == 54 | size == 36){
+        if (size == 54 | size == 36) {
             this.size = size;
             generateStandartDeck();
-        }
-
-        else {
+        } else {
             this.size = 36;
             System.out.println("Колода установлена по умолчанию...");
         }
@@ -62,7 +60,7 @@ public class Init {
     }
 
 
-    void toShuffle(StandardCardDeck[]  dD) {
+    void toShuffle(StandardCardDeck[] dD) {
         Shuffle shuffle = new Shuffle();
         shuffle.doShuffle(dD);
     }

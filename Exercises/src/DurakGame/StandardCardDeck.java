@@ -14,10 +14,12 @@ public enum StandardCardDeck {
     ACE(14);
 
     private int pow;
-    StandardCardDeck(int power){
+
+    StandardCardDeck(int power) {
         this.pow = power;
     }
-    int getPower(){
+
+    int getPower() {
         return pow;
     }
 }

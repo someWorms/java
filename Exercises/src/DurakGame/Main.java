@@ -27,7 +27,7 @@ public class Main {
                     menu = false;
                     break;
             }
-        }while (menu);
+        } while (menu);
 
     }
 }
