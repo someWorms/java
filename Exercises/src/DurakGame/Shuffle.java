@@ -22,7 +22,7 @@ public class Shuffle {
                 if (collector[j] == x) {
                     x = (int) (Math.random() * cards.length);
                     j = 0;
-                }else {
+                } else {
                     j++;
                 }
             }

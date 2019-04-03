@@ -54,6 +54,7 @@ public class Init {
                 scdNine, scdTen, scdJack,
                 scdQueen, scdKing, scdAce
         };
+
         toShuffle(diamondDeck);
 
 
