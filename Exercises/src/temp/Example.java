@@ -6,7 +6,7 @@ public class Example {
 
 
     public static void main(String[] args) {
-        Controls controls = new Controls(-1);
+        Controls controls = new Controls(-1); // в конструктор передаю значение, (1 или -1) которое будет определять управление
         controls.movement(new Scanner(System.in));
 
 
@@ -24,7 +24,6 @@ class Controls{
 
 
     void movement(Scanner sc){
-
         //Нормальное управление
         if(i == 1){
             System.out.println("Нажит на клавищу w a s d");
@@ -47,7 +46,6 @@ class Controls{
                 }
             }while (true);
         }
-
         //Инверсия управления
         if(i == -1){
             System.out.println("Нажит на клавищу w a s d");
