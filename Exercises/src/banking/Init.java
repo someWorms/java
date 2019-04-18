@@ -16,8 +16,23 @@ public class Init {
         entryMenuFrame.setLocationRelativeTo(null);
 
 
-        JButton buttonStart = new JButton("Start Game");
+        JButton buttonStart = new JButton("Enter your account");
         buttonStart.setBounds(10, 700, 100, 50);
+        buttonStart.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JTextField username = new JTextField();
+                JPasswordField password = new JPasswordField();
+                Object[] message = {"Username:", username,
+                        "Password:", password
+                };
+                int login = JOptionPane.showConfirmDialog(entryMenuFrame, message, "Login", JOptionPane.OK_CANCEL_OPTION);
+
+
+                //Check for correct n database.
+
+            }
+        });
         entryMenuFrame.add(buttonStart);
 
         JButton buttonExit = new JButton("Exit Game");
@@ -33,6 +48,6 @@ public class Init {
         entryMenuFrame.add(buttonExit);
 
     }
-
-
+    //Добавить loginMenu
+    //Добавить Db
 }
