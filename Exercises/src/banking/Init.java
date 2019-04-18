@@ -26,7 +26,7 @@ public class Init {
                 Object[] message = {"Username:", username,
                         "Password:", password
                 };
-                int login = JOptionPane.showConfirmDialog(entryMenuFrame, message, "Login", JOptionPane.OK_CANCEL_OPTION);
+                int login = JOptionPane.showConfirmDialog(entryMenuFrame, message, "Login", JOptionPane.YES_NO_CANCEL_OPTION);
 
 
                 //Check for correct n database.
