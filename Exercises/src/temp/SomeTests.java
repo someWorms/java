@@ -17,6 +17,7 @@ public class SomeTests {
         villa.priceDo();
         another.priceDo();
 
+
         villa.show();
         another.show();
     }
@@ -51,6 +52,17 @@ class TheHouse {
 
     void show() {
         out.println(price + " " + floors + " " + type);
+        price = 12;
+        out.println(price);
 
+    }
+}
+
+
+class toInstance{
+    int num = 5;
+    void reciever(int num){
+        out.println(num);
+        out.println(this.num);
     }
 }
