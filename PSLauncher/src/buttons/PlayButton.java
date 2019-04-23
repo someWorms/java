@@ -21,7 +21,7 @@ public class PlayButton {
                 if(Desktop.isDesktopSupported()){
                     Desktop desktop = Desktop.getDesktop();
                     try {
-                        desktop.open(new File(defaultPath + "AppData\\Roaming\\minecraft.exe"));
+                        desktop.open(new File(defaultPath + "AppData\\Roaming\\minecraft.exe"));  // ПОКА НЕ РАБОТАЕТ!!
                     } catch (IOException e1) {
                         e1.printStackTrace();
                     }
