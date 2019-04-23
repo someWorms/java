@@ -17,7 +17,7 @@ public class VKGroupButton {
         button.setSize(100,50);
         button.setMaximumSize(button.getSize());
         button.addActionListener(new ActionListener() {
-            @Override
+
             public void actionPerformed(ActionEvent e) {
                 if(Desktop.isDesktopSupported()){
                     Desktop desktop = Desktop.getDesktop();

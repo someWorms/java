@@ -14,6 +14,8 @@ public class ButtonPanel {
 
         buttonPanel.setLayout(new BoxLayout(buttonPanel, BoxLayout.Y_AXIS));
 
+
+
         buttonPanel.add(Box.createRigidArea(new Dimension(1, 30)));
         buttonPanel.add(new PlayButton().play);
 
