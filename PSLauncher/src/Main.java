@@ -67,6 +67,25 @@ public class Main {
             }
         });
         buttonPanel.add(vkGroupButton);
+        buttonPanel.add(Box.createRigidArea(new Dimension(1, 10)));
+
+        //Кнопка Выход
+        JButton exitButton = new JButton("Выход") {
+            {
+                setSize(100, 50);
+                setMaximumSize(getSize());
+            }
+        };
+        exitButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(JOptionPane.showConfirmDialog(mainFrame, "Вы уверены?", "Выход", JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION){
+                    System.exit(0);
+                }
+            }
+        });
+        buttonPanel.add(exitButton);
+        buttonPanel.add(Box.createRigidArea(new Dimension(1, 10)));
 
 
         // revalidate для отрисовки в случае багов
@@ -76,18 +95,12 @@ public class Main {
     }
 
     static JFrame getFrame() {
-
-
         JFrame jFrame = new JFrame();
         jFrame.setVisible(true);
         jFrame.setResizable(false);
-
-
         jFrame.pack();
         jFrame.setLocationRelativeTo(null);
         jFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-
-
         return jFrame;
     }
 
