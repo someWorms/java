@@ -7,6 +7,7 @@ import java.awt.*;
 
 
 public class RNGFrame {
+
     public RNGFrame() {
         JFrame jFrame = new JFrame();
 //        String[] fonts = GraphicsEnvironment.getLocalGraphicsEnvironment().getAvailableFontFamilyNames();
@@ -29,8 +30,10 @@ public class RNGFrame {
         jFrame.add(new rngComponent());
         jFrame.revalidate();
 
+
+
     }
-    class rngComponent extends JComponent{
+    static class rngComponent extends JComponent{
         @Override
         protected void paintComponent(Graphics g) {
             Font f = new Font("Serif", Font.BOLD, 30);

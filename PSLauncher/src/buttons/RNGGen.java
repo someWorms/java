@@ -1,5 +1,6 @@
 package buttons;
 
+import FP.MainFrame;
 import FP.RNGFrame;
 
 import javax.swing.*;
@@ -12,7 +13,7 @@ public class RNGGen {
 
     public JButton generate = getButton();
 
-    private JButton getButton() {
+    private  JButton getButton() {
         JButton button = new JButton("Generate");
         button.setSize(100, 50);
         button.setMaximumSize(button.getSize());
@@ -21,7 +22,8 @@ public class RNGGen {
             @Override
             public void actionPerformed(ActionEvent e) {
                 n++;//(int)Math.random()*40000;
-                //Component.validate();
+                System.out.println(n);
+
             }
         });
 
