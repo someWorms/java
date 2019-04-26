@@ -5,13 +5,18 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
+
 import java.io.IOException;
+
+
 
 public class PlayButton {
     public JButton play = getButton();
     private String defaultPath = System.getProperty("user.home");
 
+    
     private JButton getButton(){
+
         JButton button = new JButton("Играть");
         button.setSize(100,50);
         button.setMaximumSize(button.getSize());
