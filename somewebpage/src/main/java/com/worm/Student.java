@@ -2,9 +2,10 @@ package com.worm;
 
 import org.springframework.web.multipart.MultipartFile;
 
-import java.beans.Transient;
 
 public class Student {
+
+    
     private String name;
 
 

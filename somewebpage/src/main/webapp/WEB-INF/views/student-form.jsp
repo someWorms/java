@@ -13,15 +13,10 @@
     <title>Student form</title>
 </head>
 <body>
-    <form:form method="post" action="processForm" modelAttribute="student">
-    <%--    Name: <form:input path="name"/>--%>
-
-        <input type="file" name="file">
-
-        <input type="submit" value="Go">
-
-
-    </form:form>
+    <form method="post" enctype="multipart/form-data" action="uploadImage">
+        <input type="file" name="imageFile"/>
+        <input type="submit" value="Upload"/>
+    </form>
 
 </body>
 </html>

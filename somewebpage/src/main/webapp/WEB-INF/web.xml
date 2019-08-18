@@ -18,11 +18,21 @@
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
-
+ц
 	<!-- Step 2: Set up URL mapping for Spring MVC Dispatcher Servlet -->
 	<servlet-mapping>
 		<servlet-name>dispatcher</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
+
+	<filter>
+		<filter-name>multipartFilter</filter-name>
+		<filter-class>org.springframework.web.multipart.support.MultipartFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>multipartFilter</filter-name>
+		<url-pattern>/somewebpage_war_exploded/processForm</url-pattern>
+	</filter-mapping>
 	
 </web-app>
