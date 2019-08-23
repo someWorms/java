@@ -1,0 +1,8 @@
+Its my tests, with getting data from web  using spring.
+
+dispatcher-servlet.xml
+web.xml
+are configured to every project, so i just want to copy it, unless i will use spring boot
+
+
+java-classes deleted, i will upload them later
